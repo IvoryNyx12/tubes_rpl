@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en-US" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<title> Sircle Recruitmen </title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Web Resmi Sircle">
+    <link href="">
+    <link rel="shortcut icon" href="asset/img/logo.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="asset/js/jquery.mixitup.min.js"></script>
+    <link rel="stylesheet" href="asset/css/layout.css">
+        <link rel='stylesheet' id='html5blank-css'  href='asset/css/index.css' />
+  <script type="text/javascript">
+  $(function () {
+    
+    var filterList = {
+    
+      init: function () {
+      
+        // MixItUp plugin
+        // http://mixitup.io
+        $('#portfoliolist').mixItUp({
+          selectors: {
+            target: '.portfolio',
+            filter: '.filter1' 
+          },
+          load: {
+            filter: '.app'  
+          }     
+        });               
+      
+      }
+
+    };
+    
+    // Run the show!
+    filterList.init();
+    
+    
+  }); 
+  </script>
+  </head>
+<body>
+
+  <!-- Navbar -->
+       <?php include('navbar.php');?>
+  <!-- Navbar -->
+
+  <!-- Hero Banner -->
+  <section class="hero has-bg-img" style="background-image: url(https://images.pexels.com/photos/709/nature-mountain-volcano-asia.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">
+    <div class="hero-body">
+      <div class="container" style="z-index: 5">
+        <div class="columns">
+          <div class="column is-half u-mrgn--top-m1">
+            <h1 class="title u-txt--medium u-mrgn--bottom-5">Nikmati liburan mu, 
+              <br/>dengan
+              <span class="u-color--ruby u-txt--bold">BANYUMAS TREVELER</span>
+            </h1>
+            <h2 class="subtitle u-lh--3">Banyumas treveler. bersama kita akan menjelajahi banyumas, sesuaikan liburan kamu dengan katagori tersedia atau pilih sesuai kebutuhan mu!</h2>
+          </div>
+        </div>
+      </div>
+      <div class="filter" style="z-index: 1"></div>
+  </section>
+  <!-- Hero Banner -->
+
+  <!-- Desc team -->
+  <section class="container u-mrgn--top-xl" >
+    <div class="columns is-centered">
+      <div class="column is-three-quarters has-text-centered u-pad--v-2">
+         <span class="u-color--ruby u-txt--bold"><h4>#visitbanyumas</h4></span>
+        <h1 class="title u-mrgn--bottom-5">Banyumas treveler</h1>
+        <p class="subtitle u-lh--3">Ahlinya kemping ceria, nanjak gunung, jeguran curug, wisata kuliner, sepeda - sepedaan di banyumas</p>
+        <button type="button" class="btn btn-outline-dark" style="margin-top: 15px;">Meet our team</button></a></p>
+      </div>
+    </div>
+  </section>
+  <!-- Desc team -->
+ 
+  <!-- Tempat menarik -->
+  <section class="container u-mrgn--top-xl" >
+      <div class="column column.is-full has-text-centered u-pad--v-2">
+        <h1 class="title u-mrgn--bottom-5">Tempat menarik di banyumas</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d223206.8868648061!2d109.18567038371626!3d-7.420932725732865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1swisata+banyumas!5e1!3m2!1sid!2sid!4v1527946581130" style="min-width: 100%; height: 500px;" allowfullscreen></iframe>
+    </div>
+  </section>
+  <!-- Tempat menarik -->
+
+ <section class="container u-mrgn--top-xl" >
+  <div class="container">
+
+    <ul id="filters1" class="clearfix">
+      <li><span class="filter1 active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
+      <li><span class="filter1" data-filter=".app">Camping ceria</span></li>
+      <li><span class="filter1" data-filter=".card">Nanjak gunung</span></li>
+      <li><span class="filter1" data-filter=".icon">Jeguran curug</span></li>
+      <li><span class="filter1" data-filter=".logo">Wisata kuliner</span></li>
+      <li><span class="filter1" data-filter=".web">Sepeda - sepedaan</span></li>
+    </ul>
+
+    <div id="portfoliolist">
+      
+      <div class="portfolio logo" data-cat="logo">
+        <div class="portfolio-wrapper">       
+          <img src="asset/img/portfolios/logo/5.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Bird Document</a>
+              <span class="text-category">Logo</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>        
+
+      <div class="portfolio app" data-cat="app">
+        <div class="portfolio-wrapper">     
+          <img src="asset/img/portfolios/logo/2.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Visual Infography</a>
+              <span class="text-category">APP</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>    
+      
+      <div class="portfolio web" data-cat="web">
+        <div class="portfolio-wrapper">           
+          <img src="img/portfolios/web/4.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Sonor's Design</a>
+              <span class="text-category">Web design</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>        
+      
+      <div class="portfolio card" data-cat="card">
+        <div class="portfolio-wrapper">     
+          <img src="img/portfolios/card/1.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Typography Company</a>
+              <span class="text-category">Business card</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>  
+            
+      <div class="portfolio app" data-cat="app">
+        <div class="portfolio-wrapper">
+          <img src="img/portfolios/app/3.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Weatherette</a>
+              <span class="text-category">APP</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>      
+      
+      <div class="portfolio card" data-cat="card">
+        <div class="portfolio-wrapper">     
+          <img src="img/portfolios/card/4.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">BMF</a>
+              <span class="text-category">Business card</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>  
+      
+      <div class="portfolio card" data-cat="card">
+        <div class="portfolio-wrapper">     
+          <img src="img/portfolios/card/5.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Techlion</a>
+              <span class="text-category">Business card</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>  
+      
+      <div class="portfolio logo" data-cat="logo">
+        <div class="portfolio-wrapper">     
+          <img src="img/portfolios/logo/1.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">KittyPic</a>
+              <span class="text-category">Logo</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>                                                                              
+      
+      <div class="portfolio app" data-cat="app">
+        <div class="portfolio-wrapper">     
+          <img src="img/portfolios/app/2.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Graph Plotting</a>
+              <span class="text-category">APP</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>                            
+      
+      <div class="portfolio card" data-cat="card">
+        <div class="portfolio-wrapper">     
+          <img src="img/portfolios/card/2.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">QR Quick Response</a>
+              <span class="text-category">Business card</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>        
+
+      <div class="portfolio logo" data-cat="logo">
+        <div class="portfolio-wrapper">     
+          <img src="img/portfolios/logo/6.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Mobi Sock</a>
+              <span class="text-category">Logo</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>                                  
+
+      <div class="portfolio logo" data-cat="logo">
+        <div class="portfolio-wrapper">     
+          <img src="img/portfolios/logo/7.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Village Community Church</a>
+              <span class="text-category">Logo</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>                          
+      
+      <div class="portfolio icon" data-cat="icon">
+        <div class="portfolio-wrapper">     
+          <img src="img/portfolios/icon/4.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Domino's Pizza</a>
+              <span class="text-category">Icon</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>              
+
+      <div class="portfolio web" data-cat="web">
+        <div class="portfolio-wrapper">           
+          <img src="img/portfolios/web/3.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Backend Admin</a>
+              <span class="text-category">Web design</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>                                                
+
+      <div class="portfolio icon" data-cat="icon">
+        <div class="portfolio-wrapper">     
+          <img src="img/portfolios/icon/1.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Instagram</a>
+              <span class="text-category">Icon</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>        
+      
+      <div class="portfolio web" data-cat="web">
+        <div class="portfolio-wrapper">           
+          <img src="img/portfolios/web/2.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Student Guide</a>
+              <span class="text-category">Web design</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>                                  
+
+      <div class="portfolio icon" data-cat="icon">
+        <div class="portfolio-wrapper">
+          <img src="img/portfolios/icon/2.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Scoccer</a>
+              <span class="text-category">Icon</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>                                                                                                                                
+
+      <div class="portfolio icon" data-cat="icon">
+        <div class="portfolio-wrapper">           
+          <img src="img/portfolios/icon/5.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">3D Map</a>
+              <span class="text-category">Icon</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>      
+      
+      <div class="portfolio web" data-cat="web">
+        <div class="portfolio-wrapper">           
+          <img src="img/portfolios/web/1.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Note</a>
+              <span class="text-category">Web design</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>                  
+      
+      <div class="portfolio logo" data-cat="logo">
+        <div class="portfolio-wrapper">     
+          <img src="img/portfolios/logo/3.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Native Designers</a>
+              <span class="text-category">Logo</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>                                  
+
+      <div class="portfolio logo" data-cat="logo">
+        <div class="portfolio-wrapper">     
+          <img src="img/portfolios/logo/4.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Bookworm</a>
+              <span class="text-category">Logo</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>                                                        
+      
+      <div class="portfolio icon" data-cat="icon">
+        <div class="portfolio-wrapper">     
+          <img src="img/portfolios/icon/3.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Sandwich</a>
+              <span class="text-category">Icon</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>                                                
+      
+      <div class="portfolio card" data-cat="card">
+        <div class="portfolio-wrapper">     
+          <img src="img/portfolios/card/3.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Reality</a>
+              <span class="text-category">Business card</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>  
+
+      <div class="portfolio logo" data-cat="logo">
+        <div class="portfolio-wrapper">     
+          <img src="img/portfolios/logo/2.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a class="text-title">Speciallisterne</a>
+              <span class="text-category">Logo</span>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>        
+                    
+      
+    </div>
+    
+  </div><!-- container -->
+  </section>
+
+
+
+
+  <!-- BukaPotensi -->
+  <div class="separator u-mrgn--top-m" id="pengurus"></div>
+
+  <!-- pengurus -->
+  <section class="container u-mrgn--top-m">
+    <div class="columns">
+      <div class="column u-pad--v-2">
+        <div class="subheading u-mrgn--bottom-2 u-txt--bold">#Program 1</div>
+        <img src="" class="pengurus-logo u-mrgn--bottom-2" alt="Pengurus" />
+        <p class="is-size-6 u-lh--4">
+          <span class="u-txt--medium">#Pengurus</span> merupakan program tahunan Sircle sebagai bentuk dukungan dan peran aktif dalam perkembangan mahasiswa/i calon engineer muda Indonesia dibidang Teknologi Informasi yang mampu memberikan kontribusi positif kepada Indonesia.
+          <span class="u-txt--medium">#BukaPotensi</span> Siapkan Diri, Raih Kesempatan Melalui
+          <span class="u-txt--medium">#Pengurus</span>.
+        </p>
+        <a href="https://bukl.pk/Regpengurus2018" class="button button--ruby has-shadow is-borderless u-mrgn--top-3 u-txt--bold is-size-7" target="_blank">Daftar Sekarang!</a>
+      </div>
+    </div>
+    <div class="columns u-mrgn--top-5">
+      <div class="column is-3 u-pad--v-2">
+        <div class="tab-nav nav-pengurus">
+          <a href="#" data-nav="1" class="selected">Benefit</a>
+          <a href="#" data-nav="2">Administrasi</a>
+          <a href="#" data-nav="3">Syarat & Ketentuan</a>
+          <a href="#" data-nav="4">Contact Person</a>
+          <div class="magic-box magic-pengurus">&nbsp;</div>
+        </div>
+      </div>
+      <div class="column is-9 u-pad--v-2">
+        <div class="tab-content content-pengurus">
+          <div class="tab-section selected" data-content="1">
+            <h2 class="is-size-5 u-txt--bold u-mrgn--bottom-1">Benefit</h2>
+            <p class="u-mrgn--bottom-3">Benefit yang kamu akan dapatkan dari #Pengurus:</p>
+            <ul>
+              <li>
+                <span class="check"></span> Biaya perkuliahan selama 2 semester.</li>
+              <li>
+                <span class="check"></span> Uang saku sebesar Rp2.000.000,- /bulan.</li>
+              <li>
+                <span class="check"></span> Program pelatihan dan pengembangan diri.</li>
+              <li>
+                <span class="check"></span> Berkesempatan berkarya bersama Sircle.</li>
+            </ul>
+          </div>
+          <div class="tab-section" data-content="2">
+            <h2 class="is-size-5 u-txt--bold u-mrgn--bottom-1">Administrasi</h2>
+            <p class="u-mrgn--bottom-3">Adapun beberapa administrasi yang dibutuhkan oleh pihak kami untuk mendapatkan #Pengurus:</p>
+            <ul>
+              <li>
+                1. Buka situs
+                <span class="u-txt--medium">bukapotensi.Sircle.com</span>
+              </li>
+              <li>
+                2. Mengisi form
+                <span class="u-txt--medium">#Pengurus.</span>
+              </li>
+              <li>
+                3. Softcopy foto berwarna terbaru.</li>
+              <li>
+                4. ID Card (KTP) & Kartu Tanda Mahasiswa (KTM).</li>
+              <li>
+                4. Curriculum Vitae.</li>
+              <li>
+                5. Transkrip Nilai Terakhir.</li>
+            </ul>
+          </div>
+          <div class="tab-section" data-content="3">
+            <h2 class="is-size-5 u-txt--bold u-mrgn--bottom-1">Syarat & Ketentuan</h2>
+            <p class="u-mrgn--bottom-3">Berikut beberapa syarat dan ketentuan untuk mendapatkan #Pengurus:</p>
+            <ul>
+              <li>
+                <span class="check"></span> Terbuka untuk Mahasiswa/i (S1) semester akhir (minimum telah menyelesaikan 6 semester) konsentrasi Ilmu Komputer, Sistem Informasi, Teknik Elektro, atau bidang Keilmuan sejenis.
+              </li>
+              <li>
+                <span class="check"></span> Sehat jasmani dan rohani.</li>
+              <li>
+                <span class="check"></span> Bersedia mengikuti seluruh proses dan tahapan
+                <span class="u-txt--medium">#Pengurus</span>.</li>
+            </ul>
+          </div>
+          <div class="tab-section" data-content="4">
+            <h2 class="is-size-5 u-txt--bold u-mrgn--bottom-1">Untuk Pengurus</h2>
+            <p class="u-mrgn--bottom-3">Jika memiliki pertanyaan atau kendala terkait
+              <span class="u-txt--medium">#Pengurus</span>, dapat menghubungi kami melalui:</p>
+            <ul>
+              <li>
+                <span class="phone"></span>
+                <span class="u-txt--medium">Telepon:</span> Admin ( 0812 - 7910 - 8795 )
+              </li>
+              <li>
+                <span class="email"></span>
+                <span class="u-txt--medium">Email:</span>
+                <span class="u-txt--medium">bukapotensi@Sircle.com</span> dengan subject:
+                <span class="u-txt--medium">Pengurus_Kampus_Nama</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- pengurus -->
+
+  <div class="separator u-mrgn--top-m" id="member"></div>
+
+  <!-- member -->
+  <section class="container u-mrgn--top-m">
+    <div class="columns">
+      <div class="column u-pad--v-2">
+        <div class="subheading u-mrgn--bottom-2 u-txt--bold">#Program 2</div>
+        <img src="" class="member-logo u-mrgn--bottom-2" alt="member" />
+        <p class="is-size-6 u-lh--4">
+          <span class="u-txt--medium">#Member</span> merupakan sebuah program baru dari Sircle untuk memberikan kesempatan kepada Mahasiswa/I untuk membuka potensi dari semua latar belakang keilmuan yang akan menjadi representasi Sircle di dunia kampus. Tunjukan Potensimu melalui
+          <span class="u-txt--medium">#Member</span>, mari bergabung menjadi bagian dari Sircle!
+        </p>
+        <a href="https://bukl.pk/Regmember2018" class="button button--ruby has-shadow is-borderless u-mrgn--top-3 u-txt--bold is-size-7" target="_blank">Daftar Sekarang!</a>
+      </div>
+    </div>
+    <div class="columns u-mrgn--top-5">
+      <div class="column is-3 u-pad--v-2">
+        <div class="tab-nav nav-member">
+          <a href="#" data-nav="1" class="selected">Benefit</a>
+          <a href="#" data-nav="2">Administrasi</a>
+          <a href="#" data-nav="3">Syarat & Ketentuan</a>
+          <a href="#" data-nav="4">Contact Person</a>
+          <div class="magic-box magic-member">&nbsp;</div>
+        </div>
+      </div>
+      <div class="column is-9 u-pad--v-2">
+        <div class="tab-content content-member">
+          <div class="tab-section selected" data-content="1">
+            <h2 class="is-size-5 u-txt--bold u-mrgn--bottom-1">Benefit</h2>
+            <p class="u-mrgn--bottom-3">Benefit yang kamu akan dapatkan dari #Member:</p>
+            <ul>
+              <li>
+                <span class="check"></span> Biaya perkuliahan selama 2 semester, Rp5.000.000,- /semester.</li>
+              <li>
+                <span class="check"></span> Uang saku sebesar Rp1.500.000,- /bulan.</li>
+              <li>
+                <span class="check"></span> Program pelatihan dan pengembangan diri</li>
+              <li>
+                <span class="check"></span> Berkesempatan berkarya bersama Sircle .
+              </li>
+            </ul>
+          </div>
+          <div class="tab-section" data-content="2">
+            <h2 class="is-size-5 u-txt--bold u-mrgn--bottom-1">Administrasi</h2>
+            <p class="u-mrgn--bottom-3">Adapun beberapa administrasi yang dibutuhkan oleh pihak kami untuk mendapatkan #Member:</p>
+            <ul>
+              <li>
+                1. Mengisi form
+                <span class="u-txt--medium">#Member</span>
+              </li>
+              <li>
+                2. Softcopy foto berwarna terbaru</li>
+              <li>
+                3. ID Card (KTP) & Kartu Tanda Mahasiswa (KTM)</li>
+              <li>
+                4. Curriculum Vitae</li>
+              <li>
+                5. Membuat video pendek dengan ketentuan:
+                <ul class="u-pad--left-3 u-mrgn--top-2">
+                  <li>
+                    <span class="check"></span> Durasi 40 - 60 detik</li>
+                  <li>
+                    <span class="check"></span> Dikemas semenarik mungkin yang berisikan: Profil singkat dan Alasan tertarik menjadi
+                    <span class="u-txt--medium">#Member</span> Sircle</li>
+                  <li>
+                    <span class="check"></span> Video harus di Post di akun Instagram pribadi (publik tidak di-private) dengan Caption, moto hidup singkat dalam satu kalimat dan menyertakan hashtag
+                    <span class="u-txt--medium">#Sircle #BukaPotensi #Member</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-section" data-content="3">
+            <h2 class="is-size-5 u-txt--bold u-mrgn--bottom-1">Syarat & Ketentuan</h2>
+            <p class="u-mrgn--bottom-3">Berikut beberapa syarat dan ketentuan untuk mendapatkan #Member:</p>
+            <ul>
+              <li>
+                <span class="check"></span> Terbuka untuk Mahasiswa/i (S1) aktif minimum semester 3 (telah menyelesaikan 2 semester) daria semua jurusan.
+              </li>
+              <li>
+                <span class="check"></span> Sehat jasmani dan rohani.</li>
+              <li>
+                <span class="check"></span> Aktif di organisasi kemahasiswaan atau komunitas.
+              </li>
+              <li>
+                <span class="check"></span> Memiliki minat untuk mengorganisir dan membuat sebuah acara.
+              </li>
+              <li>
+                <span class="check"></span> Tidak sedang terikat dengan program serupa.
+              </li>
+              <li>
+                <span class="check"></span> Tertarik dengan perkembangan teknologi dan industri internet.
+              </li>
+              <li>
+                <span class="check"></span> Memiliki pemahaman yang baik tentang Sircle
+              </li>
+              <li>
+                <span class="check"></span> Bersedia mengikuti seluruh proses dan tahapan #Member.</li>
+            </ul>
+          </div>
+          <div class="tab-section" data-content="4">
+            <h2 class="is-size-5 u-txt--bold u-mrgn--bottom-1">Untuk Member</h2>
+            <p class="u-mrgn--bottom-3">Jika memiliki pertanyaan atau kendala terkait
+              <span class="u-txt--medium">#Member</span>, dapat menghubungi kami melalui:</p>
+            <ul>
+              <li>
+                <span class="phone"></span>
+                <span class="u-txt--medium">Telepon:</span> Admin ( 0812 - 7910 - 8795 )
+              </li>
+              <li>
+                <span class="email"></span>
+                <span class="u-txt--medium">Email:</span>
+                <span class="u-txt--medium">bukapotensi@Sircle.com</span> dengan subject: Member_Kampus_Nama
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- member -->
+
+  <div class="separator u-mrgn--top-m" id="faq"></div>
+
+  <!-- FAQ -->
+  <section class="container u-mrgn--top-m">
+    <div class="columns">
+      <div class="column u-pad--v-2">
+        <div class="subheading u-mrgn--bottom-2 u-txt--bold">#FAQ</div>
+        <h1 class="u-txt--medium is-size-5 u-mrgn--bottom-1">Pertanyaan yang sering diajukan</h1>
+        <p class="is-size-6 u-lh--4">Kami sering mendapatkan beberapa pertanyaan dari calon kandidat yang sering ditanyakan, oleh karena itu kami merangkumnya menjadi satu. Berikut pertanyaannya di bawah ini:</p>
+      </div>
+    </div>
+    <div class="columns u-mrgn--top-5">
+      <div class="column is-12 u-pad--v-2">
+        <div class="faq">
+          <div class="faq-row">
+            <h3 class="is-size-7 u-txt--medium u-mrgn--bottom">Mau daftar beasiswa ini, persyaratannya apa saja ya?</h3>
+            <p class="is-size-7">Silakan cek halaman situs bukapotensi.Sircle.com</p>
+          </div>
+          <div class="faq-row">
+            <h3 class="is-size-7 u-txt--medium u-mrgn--bottom">Jurusan apa saja yang sebidang dengan Computer Science?</h3>
+            <p class="is-size-7">Jurusan Teknik Informatika, Sistem Informasi, Teknik Elektro, dan jurusan lain yang mempelajari pemrograman/IT-related field</p>
+          </div>
+          <div class="faq-row">
+            <h3 class="is-size-7 u-txt--medium u-mrgn--bottom">Dalam persyaratan kan diminta untuk menyertakan transkrip nilai sampai semester 6, padahal saya sekarang masih semester 6 jadi nilai mata kuliah semester 6 kan belum ada. Lalu bagaimana ya mbak?</h3>
+            <p class="is-size-7">Iya tidak apa, silahkan lampirkan transkrip semester terakhir yang ada aja dulu</p>
+          </div>
+          <div class="faq-row">
+            <h3 class="is-size-7 u-txt--medium u-mrgn--bottom">Untuk mahasiswa penerima beasiswa bidik misi apakah boleh mendaftar?</h3>
+            <p class="is-size-7">Setau kami, di bidik misi ada ketentuan bahwa tidak boleh menerima beasiswa dari institusi lain. coba dicek lagi ya. Dan diusahakan juga tidak menerima dari beasiswa yang sejenis.</p>
+          </div>
+          <div class="faq-row">
+            <h3 class="is-size-7 u-txt--medium u-mrgn--bottom">Persyaratan untuk ikut harus sedang dalam S1? Kalau dari D3 tidak bisa yah?</h3>
+            <p class="is-size-7">Program ini ditujukan S1 dulu ya. Silahkan ditunggu terus untuk perkembangan lainnya.</p>
+          </div>
+          <div class="faq-row">
+            <h3 class="is-size-7 u-txt--medium u-mrgn--bottom">Saya cuma mau bertanya saja, tujuan beasiswanya itu dalam ilmu komputer mengarah ke website ataukah android developer atau lainnya?</h3>
+            <p class="is-size-7">Untuk proses seleksi akan tentang basic pemrograman, tapi setelah bergabung kalian bisa memilih ke beberapa bidang ilmu (related to engineering).</p>
+          </div>
+          <div class="faq-row">
+            <h3 class="is-size-7 u-txt--medium u-mrgn--bottom">Saya sudah mendaftar, lalu selanjutnya bagaimana ya?</h3>
+            <p class="is-size-7">Selanjutnya tunggu saja pemberitahuan via email dari kami ya.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ -->
+
+  <div class="container u-mrgn--top-xl"></div>
+
+	<footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <strong>BukaPotensi</strong> by
+          <a href="https://www.Sircle.com" target="_blank" class="u-color--ruby u-txt--bold">Sircle</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="asset/js/js.js"></script>
+        <script type="text/javascript" src="asset/js/jsimage.js"></script>
+</body>
+
+</html>

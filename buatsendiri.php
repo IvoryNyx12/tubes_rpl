@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <title> Banyumas Treveler </title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asset/img/logo.png" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/layout.css"/>
+    <link rel='stylesheet' href='asset/css/style.css' />
+    <link rel='stylesheet' href='asset/css/form.css' />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="asset/js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        
+        var filterList = {
+        
+          init: function () {
+          
+            // MixItUp plugin
+            // http://mixitup.io
+            $('#portfoliolist').mixItUp({
+              selectors: {
+                target: '.portfolio',
+                filter: '.filter1' 
+              },
+              load: {
+                filter: '.cc'  
+              }     
+            });               
+          
+          }
+
+        };
+        
+        // Run the show!
+        filterList.init();
+        
+        
+      }); 
+      </script>
+  </head>
+<body>
+
+  <!-- Navbar -->
+  <?php include('navbar.php');?>
+  <!-- Navbar -->
+
+  <!-- Hero Banner -->
+  <section class="hero has-bg-img" style="background-image: url(https://images.pexels.com/photos/7368/startup-photos.jpg?auto=compress&cs=tinysrgb&h=350);">
+  
+    <div class="hero-body">
+      <div class="container" style="z-index: 5">
+        <div class="columns">
+          <div class="column is-half u-mrgn--top-m1">
+            <h1 class="title u-txt--medium u-mrgn--bottom-5">Susun dan rencanakan
+                <br>liburan mu, 
+              <span class="u-color--ruby u-txt--bold">SENDIRI</span>
+            </h1>
+            <h2 class="subtitle u-lh--3">Kami akan senang mendengar dari Anda. Silakan hubungi kami di nomor di bawah, isi formulir, atau kirim email kepada kami.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="filter" style="z-index: 1"></div>
+  
+  </section>
+  <!-- Hero Banner -->
+
+  <!-- Desc team -->
+  <section class="container u-mrgn--top-xl" >
+    
+    <div class="columns is-centered">
+    
+      <div class="column is-three-quarters has-text-centered u-pad--v-2">
+         <span class="u-color--ruby u-txt--bold"><h4>#visitbanyumas</h4></span>
+        <h1 class="title u-mrgn--bottom-5">Susun liburan anda</h1>
+        <p class="subtitle u-lh--3">Sesuaikan rencana lburan anda dengan mengsi form dibawah sesuai kategori liburan yang ada</p>
+      </div>
+    
+    </div>
+  
+  </section>
+  <!-- Desc team -->
+
+  <!-- katalog --> 
+ <section class="container u-mrgn--top-xl" >
+    <div class="column column.is-full has-text-centered u-pad--v-2">
+    <h1 class="title u-mrgn--bottom-5">Katalog</h1>
+  <div class="container">
+  
+    <ul id="filters1" class="clearfix">
+      <li><span class="filter1 active" data-filter=".cc, .ng, .jc, .wk, .ss">All</span></li>
+      <li><span class="filter1" data-filter=".cc">Camping ceria</span></li>
+      <li><span class="filter1" data-filter=".ng">Nanjak gunung</span></li>
+      <li><span class="filter1" data-filter=".jc">Jeguran curug</span></li>
+      <li><span class="filter1" data-filter=".wk">Wisata kuliner</span></li>
+    </ul>
+
+    <div id="portfoliolist">
+      
+      <div class="portfolio jc" data-cat="jc">
+        <div class="portfolio-wrapper">   
+          <img src="asset/img/portfolios/curug/telagasunyi.jpg" alt="" />
+          <div class="label">
+            <div class="label-text">
+              <a href="telagasunyi.php" class="text-title" style="color: white">Telaga Sunyi</a>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div> 
+
+      <div class="portfolio cc" data-cat="cc">
+        <div class="portfolio-wrapper">   
+          <img src="asset/img/portfolios/camp/tranggulasih.jpg" alt="sad" />
+          <div class="label">
+            <div class="label-text">
+              <a href="tranggulasih.php" class="text-title" style="color: white">Tranggulasih</a>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio ng" data-cat="ng">
+        <div class="portfolio-wrapper">   
+          <img src="asset/img/portfolios/nanjak/gunungslamet.jpg" alt="sad" />
+          <div class="label">
+            <div class="label-text">
+              <a href="tranggulasih.php" class="text-title" style="color: white">Gunung Slamet</a>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio wk" data-cat="wk">
+        <div class="portfolio-wrapper">   
+          <img src="asset/img/portfolios/kuliner/pratisthaharsa.jpg" alt="sad" />
+          <div class="label">
+            <div class="label-text">
+              <a href="tranggulasih.php" class="text-title" style="color: white">Pratistha Harsa</a>
+            </div>
+            <div class="label-bg"></div>
+          </div>
+        </div>
+      </div>          
+                    
+    </div>
+    
+  </div><!-- container -->
+  </section>
+  <!-- katalog -->
+
+  <section class="container u-mrgn--top-xl" >
+
+    <!-- MultiStep Form -->
+      <div class="container">
+        <form id="msform">
+      <!-- progressbar -->
+      <!-- fieldsets -->
+          <div class="column column.is-full has-text-centered u-pad--v-2">
+          <h1 class="title u-mrgn--bottom-5">Ceritakan liburan impian mu</h1>
+        <fieldset>
+
+          <h2 class="fs-title">Identitas diri</h2>
+          <h3 class="fs-subtitle"></h3>
+          <input type="text" name="info" placeholder="Nama" required>
+          <input type="text" name="pro_name" placeholder="Nomor telpon" required >
+          <input type="button" name="next" class="next action-button" value="Selanjutnya" />
+        </fieldset>
+        <fieldset>
+          <h2 class="fs-title">Ceritakan liburan impianmu</h2>
+          <h3 class="fs-subtitle"></h3>
+          <textarea rows="10" cols="50" name="background" placeholder="Deskrisi"></textarea>
+          <input type="button" name="previous" class="previous action-button" value="Sebelumnya" />
+          <input type="button" name="next" class="next action-button" value="Selesai" />
+        </fieldset>
+        <fieldset>
+          <h2 class="fs-title">Terimakasih</h2>
+          <h3 class="fs-subtitle">Segera anda kami hubungi</h3>
+        </fieldset>
+        </form>
+      </div>
+    </div>
+  </section>
+
+    <!-- Desc team -->
+  <section class="container u-mrgn--top-xl" >
+    
+    <div class="columns is-centered">
+    
+      <div class="column is-three-quarters has-text-centered u-pad--v-2">
+         <span class="u-color--ruby u-txt--bold"><h4>#visitbanyumas</h4></span>
+        <h1 class="title u-mrgn--bottom-5">Bingung</h1>
+        <p class="subtitle u-lh--3">Bingung, butuh masukkan, silahkan kontak kami</p>
+        <button type="button" class="btn btn-outline-dark" style="margin-top: 15px;">Hubungi kami</button></a></p>
+      </div>
+    
+    </div>
+  
+  </section>
+  <!-- Desc team -->
+
+
+  <!-- Kenapa pilih kita --> 
+  <?php include('pilihkita.php');?>
+  <!-- Kenapa pilih kita -->
+  
+  <!-- Footer -->
+  <?php include('footer.php');?>
+  <!-- Footer -->      
+  </section>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+  <script  src="asset/js/form.js"></script>
+
+
+</body>
+<script>
+    var currentTab = 0;
+    function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+</script>
+</html>
