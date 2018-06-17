@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link rel='stylesheet' href='asset/css/style.css' />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   
   <style type="text/css">
       * { margin: 0; padding: 0; }
@@ -44,7 +45,13 @@
 <body>
 
   <!-- Navbar -->
-  <?php include('navbar.php');?>
+  <div id="a-navbar">
+  </div>
+  <script>
+  $(function(){
+  $("#a-navbar").load("navbar.html");
+  });
+  </script>
   <!-- Navbar -->
 
   <!-- Hero Banner -->
@@ -228,13 +235,25 @@
 
 
 
-  <!-- Kenapa pilih kita --> 
-  <?php include('pilihkita.php');?>
+  <!-- Kenapa pilih kita -->
+  <div id="a-pilihkita">
+  </div>
+  <script>
+  $(function(){
+  $("#a-pilihkita").load("pilihkita.html");
+  });
+  </script>
   <!-- Kenapa pilih kita -->
 
   <!-- Footer -->
-       <?php include('footer.php');?>
-  <!-- Footer -->      
+  <div id="a-footer">
+  </div>
+  <script>
+  $(function(){
+  $("#a-footer").load("footer.html");
+  });
+  </script>
+  <!-- Footer -->  
 
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>

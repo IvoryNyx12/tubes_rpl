@@ -16,7 +16,9 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="asset/js/jquery.mixitup.min.js"></script>
     <link rel="stylesheet" href="asset/css/layout.css">
-        <link rel='stylesheet' id='html5blank-css'  href='asset/css/index.css' />
+    <link rel='stylesheet' id='html5blank-css'  href='asset/css/index.css' />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
   <script type="text/javascript">
   $(function () {
     
@@ -50,9 +52,14 @@
 <body>
 
   <!-- Navbar -->
-       <?php include('navbar.php');?>
+  <div id="a-navbar">
+  </div>
+  <script>
+  $(function(){
+  $("#a-navbar").load("navbar.html");
+  });
+  </script>
   <!-- Navbar -->
-
   <!-- Hero Banner -->
   <section class="hero has-bg-img" style="background-image: url(https://images.pexels.com/photos/709/nature-mountain-volcano-asia.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);">
     <div class="hero-body">
